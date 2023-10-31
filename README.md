@@ -23,7 +23,7 @@ Since I use an amd gpu, that model is what we will be deploying
 
 
 ```
-cd amd-gpu
+cd amd-gpu/Pip
 
 # Building the dockerfile
 docker build -t dolphin-mistral-inference:v1 . 
