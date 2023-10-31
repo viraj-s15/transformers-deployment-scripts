@@ -19,7 +19,7 @@ Build whatever docker image you need
 
 Example -> 
 
-Since I use a amd gpu, that model is what we will be deploying
+Since I use an amd gpu, that model is what we will be deploying
 
 
 ```
