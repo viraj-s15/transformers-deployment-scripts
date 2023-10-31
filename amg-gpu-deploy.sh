@@ -2,8 +2,9 @@
 
 # Function to display usage instructions
 usage() {
-  echo "Usage: $0 [test-run]"
+  echo "Usage: $0 [test-run] [scale-replicas]"
   echo "If 'test-run' is provided, the script will run the Docker image for testing."
+  echo "If 'scale-replicas' is provided, the script will scale the deployment to the specified number of replicas at the end."
   exit 1
 }
 
@@ -66,3 +67,11 @@ echo "Deployment exposed as a service."
 # Access the service using Minikube
 echo "Accessing the service using Minikube..."
 minikube service dm-inference-deployment
+
+# Check if 'scale-replicas' argument is provided
+if [ -n "$2" ]; then
+  # Scale the deployment to the specified number of replicas
+  echo "Scaling the deployment to $2 replicas..."
+  kubectl scale deploy/dolphin-mistral-inference-deployment --replicas="$2"
+  echo "Deployment scaled to $2 replicas."
+fi
