@@ -7,8 +7,8 @@
 
 ## About <a name = "about"></a>
 
-Mainly to host model inference locally via the pipeline api
-Multiple pod support has been added to the script
+Mainly to host model inference locally via the pipeline api <br>
+Multiple pod support has been added to the script. Making it a lot more scalable
 
 (Multithreading will be added soon)
 
