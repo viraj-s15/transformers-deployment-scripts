@@ -8,7 +8,9 @@
 ## About <a name = "about"></a>
 
 Mainly to host model inference locally via the pipeline api
-(Multithreading will be soon)
+Multiple pod support has been added to the script
+
+(Multithreading will be added soon)
 
 
 ## Getting Started <a name = "getting_started"></a>
